@@ -1,11 +1,11 @@
 # ft_printf 
 ## -Because ft_putnbr() and ft_putstr() aren’t enough-
-> printf를 직접 구현해보자.
+> printf()를 직접 구현해보자.
 
 ## 1. 프로젝트 소개
 -----
-c언어를 배울 때, 가장 먼저 보는 함수는 분명 main() 함수일 것이다. 그 다음은 틀림없이 print()다. [hello world]를 찍어야 하기에....  
-이번 프로젝트에서는 간략한 버전의 print() 함수를 직접 구현한다.
+c언어를 배울 때, 가장 먼저 보는 함수는 분명 main() 함수일 것이다. 그 다음은 틀림없이 printf()다. [hello world]를 찍어야 하기에....  
+이번 프로젝트에서는 간략한 버전의 printf() 함수를 직접 구현한다.
 
 ## 2. 프로젝트 공용 규칙
 -----
