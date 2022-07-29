@@ -39,7 +39,7 @@ c언어를 배울 때, 가장 먼저 보는 함수는 분명 main() 함수일 �
 |prototype|int ft_printf(const char *, ...);|
 |Turn in files | Makefile, *.h, */*.h, *.c, */*.c|
 |Makefile | NAME, all, clean, fclean, re|
-|Return value|Read line: correct behavior, NULL: there is nothing else to read, or an error occurred|
+|Return value | Read line: correct behavior, NULL: there is nothing else to read, or an error occurred|
 |External functs | malloc, free, write, va_start, va_arg, va_copy, va_end|
 |Libft authorized | Yes|
 |Description | Write a library that contains ft_printf(), a function that will mimic the original printf()|
