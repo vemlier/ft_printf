@@ -1,5 +1,5 @@
 # ft_printf 
-## =Because ft_putnbr() and ft_putstr() aren’t enough=
+## -Because ft_putnbr() and ft_putstr() aren’t enough-
 > printf를 직접 구현해보자.
 
 ## 1. 프로젝트 소개
