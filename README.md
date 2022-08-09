@@ -21,15 +21,15 @@ c언어를 배울 때, 가장 먼저 보는 함수는 분명 main() 함수일 �
 -----
 + 원본 printf()의 버퍼 관리는 구현하지 않는다.
 + 서식지정자 ```cspdiuxX%```를 다룰 수 있어야 한다.
-  + %c Prints a single character.
-  + %s Prints a string (as defined by the common C convention).
-  + %p The void * pointer argument has to be printed in hexadecimal format.
-  + %d Prints a decimal (base 10) number.
-  + %i Prints an integer in base 10.
-  + %u Prints an unsigned decimal (base 10) number.
-  + %x Prints a number in hexadecimal (base 16) lowercase format.
-  + %X Prints a number in hexadecimal (base 16) uppercase format.
-  + %% Prints a percent sign.
+  + %c 단일 문자 (character) 한 개를 출력한다.
+  + %s 문자열 (string) 을 출력한다.
+  + %p void * 형식의 포인터 인자를 16진수로 출력한다.
+  + %d 10진수 숫자를 출력한다.
+  + %i 10진수 정수를 출력한다.
+  + %u 부호 없는 10진수 숫자를 출력한다.
+  + %x 소문자를 사용하여 숫자를 16진수로 출력한다.
+  + %X 대문자를 사용하여 숫자를 16진수로 출력한다.
+  + %% 퍼센트 기호 (%) 를 출력한다.
 + libftprintf.a 라는 이름의 아카이브 파일이 루트 레포지토리에 생성되어야 한다.
   
 ## 4. 함수
