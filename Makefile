@@ -3,33 +3,30 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: chukim <chukim@student.42.fr>              +#+  +:+       +#+         #
+#    By: chukim <chukim@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 11:18:20 by chukim            #+#    #+#              #
-#    Updated: 2022/04/18 13:23:28 by chukim           ###   ########.fr        #
+#    Updated: 2022/08/10 02:16:07 by chukim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libftprintf.a
 LIBFTDIR	= ./libft
 LIBFTFILE	= libft.a
-
-CC		= gcc
+CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 AR		= ar rcs
 RM		= rm -f
-
-SRCS	= ft_printf.c \
-			ft_printf_parse.c \
-			ft_printf_char.c \
-			ft_printf_string.c \
-			ft_printf_num.c \
-			ft_printf_num_utils.c \
-
+SRCS	= ./srcs/ft_printf.c \
+			./srcs/ft_printf_parse.c \
+			./srcs/ft_printf_char.c \
+			./srcs/ft_printf_string.c \
+			./srcs/ft_printf_num.c \
+			./srcs/ft_printf_num_utils.c
 OBJS	= $(SRCS:.c=.o)
 
-.c.o:
-	$(CC) $(CFLAGS) -c $< -I.
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME) : $(OBJS)
 	make -C $(LIBFTDIR)
@@ -40,7 +37,7 @@ all : $(NAME)
 
 clean :
 	make -C $(LIBFTDIR) clean
-	$(RM) $(OBJS) $(BOBJS)
+	$(RM) $(OBJS)
 
 fclean : clean
 	make -C $(LIBFTDIR) fclean
