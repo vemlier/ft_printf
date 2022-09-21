@@ -6,7 +6,7 @@
 /*   By: chukim <chukim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:08:44 by chukim            #+#    #+#             */
-/*   Updated: 2022/08/10 01:27:52 by chukim           ###   ########.fr       */
+/*   Updated: 2022/09/21 22:59:45 by chukim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,9 @@ int	ft_print_p(t_info *info, va_list ap)
 	info->width -= 2;
 	info->num_base = 16;
 	num = (unsigned long long)va_arg(ap, void *);
-	ret = print_num(info, num);
+	if (num == 0)
+		ret = write(1, "(nil)", 5);
+	else
+		ret = print_num(info, num);
 	return (ret);
 }

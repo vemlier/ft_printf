@@ -6,7 +6,7 @@
 /*   By: chukim <chukim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:26:52 by chukim            #+#    #+#             */
-/*   Updated: 2022/08/10 02:17:08 by chukim           ###   ########.fr       */
+/*   Updated: 2022/09/21 23:02:42 by chukim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ int	num_itoa(t_info *info, char *num_box, unsigned long long num)
 		{
 			num_box[len++] = (DIGITS[num % info->num_base]) | info->locass;
 			num = num / info->num_base;
-			// if (num < 0 && info->address == ENABLE)
-			// 	num *= -1;
 		}
 	}
 	return (len);
